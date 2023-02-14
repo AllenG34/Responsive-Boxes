@@ -1,3 +1,46 @@
 body {
   background: blanchedalmond;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.a {
+  height: 100px;
+  background-color: gray;
+  margin-bottom: 16px;
+}
+
+.b {
+  height: 300px;
+  background-color: gray;
+}
+
+.c {
+  height: 100px;
+  background-color: gray;
+  margin-top: 16px;
+}
+.a, .b, .c{
+  border: 3px solid purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width 992px) {
+  .bc {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+  }
+
+  .b {
+    width 80%
+  }
+  .c {
+    width: 20%;
+    height: auto;
+  }
 }

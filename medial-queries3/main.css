@@ -1,3 +1,54 @@
 body {
   background: peachpuff;
 }
+
+header {
+  border: 5px solid blue;
+  box-sizing: border-box;
+  background-color: gray;
+}
+
+aside div {
+  border: 5px dashed blue;
+  background-color: gray;
+  margin: 24px;
+  width: 20%;
+}
+
+main {
+  border: 5px solid blue;
+  background-color: gray;
+  height: 100px;
+}
+
+.middlle {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+
+
+@media screen and {max-width: 600px}
+.middlle{
+  flex-direction: row;
+}
+aside {
+  width: 80%;
+  flex: 4;
+  align-items: center;
+  margin-right: 1em;
+}
+aside > div {
+  height: 10em;
+}
+
+main {
+  flex: 2;
+}
