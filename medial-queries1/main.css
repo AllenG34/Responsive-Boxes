@@ -1,46 +1,45 @@
 body {
   background: blanchedalmond;
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
 }
 
-.a {
-  height: 100px;
-  background-color: gray;
-  margin-bottom: 16px;
-}
-
-.b {
-  height: 300px;
+header, main, footer {
+  border: 1px solid blue;
   background-color: gray;
 }
 
-.c {
-  height: 100px;
-  background-color: gray;
-  margin-top: 16px;
-}
-.a, .b, .c{
-  border: 3px solid purple;
+.container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-@media only screen and (min-width 992px) {
-  .bc {
-    display: flex;
-    gap: 1rem;
-    flex-direction: row;
-  }
+main {
+  flex-grow:5;
+}
 
-  .b {
-    width 80%
+header, footer  {
+  flex-grow: 1;
+}
+
+
+
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .c {
-    width: 20%;
-    height: auto;
+  header {
+    width: 100%;
+  }
+  main {
+    margin: 1em;
+  }
+  header {
+    margin: 1 em;
+  }
+  footer{
+    margin: 1em;
   }
 }
